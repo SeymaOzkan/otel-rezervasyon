@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/jquery/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <title>Title</title>
+</head>
+<body>
+<div class="container-fluid">
+
+        <div class="row nav-row stack-column-center">
+            <div class="col-6 stack-column-center" style="text-align: left;padding: 10px 0px 10px 20px;"><p>
+                <span style="font-size: 18px;line-height: 1.5">Otel</span><br> Rezervasyon Sistemi
+            </p></div>
+            <div class="col-6 btn-bar stack-column-center">
+                <button type="button" class="btn btn-rez btn-primary">Yeni Rezervasyon Yap</button>
+            </div>
+        </div>
+
+</div>
+        <div class="container-fluid-1">
+        <div class="row row-center row-center-padding justify-content-center ">
+            <div class="col-md-8  ">
+                <div class="row d-flex justify-content-center row-select-2">
+                    <div class="col-md-4 col-md-2-bg ">
+                        <div>
+                            <img  src="images/calendar.png" width="90"
+                                 style="width: 100%;max-width: 90px;padding: 0px;margin: 20px 20px 20px 0px">
+                        </div>
+                        <p class="icon-font-active">Otel ve Tarih<br>
+                            Seçimi</p>
+                    </div>
+
+                    <div class="col-md-4 col-md-2-bg">
+                        <div class="icon-active">
+                            <img src="images/bed.png" width="90" style="width: 100%;max-width: 90px;padding: 0px;margin:20px 20px 20px 0px">
+                        </div>
+
+                        <p class="icon-font">Oda Tipi ve Manzara <br>
+                            Seçimi
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-md-2-bg">
+                        <div class="icon-active">
+                            <img src="images/valid.png" width="90"
+                                 style="width: 100%;max-width: 90px;padding: 0px;margin:20px 20px 20px 0px">
+                        </div>
+                        <p class="icon-font">Önizleme ve Ödeme <br>
+                            İşlemleri
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="form1" class="stack-column-center">
+         <div class="row d-flex justify-content-center">
+             <div class="col-10 form1-bg">
+            <form id="FirstForm">
+                 <div class="row row-center justify-content-center">
+                     <div class="col-lg-8">
+                         <div class="input-group justify-content-center">
+                             <div class="input-group-prepend">
+                                 <label class="input-group-text" for="inputGroupSelect01"><img src="images/loupe.png" width="20"
+                                                                                               style="width: 20px"></label>
+                             </div>
+
+                                 <select name="otel" id="selectedOtel" class="custom-select page-font" >
+                                     <option disabled="disabled" selected="selected">Rezervasyon yapmak için istediğiniz oteli seçiniz.</option>
+                                     <option value="Bosphorus Hotel">Bosphorus Hotel</option>
+                                     <option value="Big Istanbul Hotel">Big Istanbul Hotel</option>
+                                     <option value="Dela Hotel">Dela Hotel</option>
+                                     <option value="Aegean Hotel">Aegean Hotel</option>
+                                     <option value="Lara Hotel">Lara Hotel</option>
+                                     <option value="Bodrum Hotel">Bodrum Hotel</option>
+                                     <option value="Visnezade Istanbul Hotel">Visnezade Istanbul Hotel</option>
+                                     <option value="Konak Istanbul Hotel">Konak Istanbul Hotel</option>
+                                     <option value="Dardania Hotel">Dardania Hotel</option>
+                                     <option value="Alanya Hotel">Alanya Hotel</option>
+                                 </select>
+
+                         </div>
+                     </div>
+
+                 </div>
+                 <div class="row stack-column-center justify-content-center">
+                     <div class="col-4 stack-column-center">
+                         <div class="select-entry-date page-font"><label for="checkInDate">Giriş Tarihi:</label>
+                             <input type="date" id="checkInDate" name="checkInDate" required>
+
+                         </div>
+
+                     </div>
+                     <div class="col-4 stack-column-center">
+                         <div class="select-release-date page-font"><p><label for="checkOutDate">Çıkış Tarihi:</label>
+                             <input type="date" id="checkOutDate" name="checkOutDate" required>
+
+                         </p></div>
+                     </div>
+                     <div class="row stack-column-center ">
+                         <div class="col stack-column-center">
+                             <div class="select-parent stack-column-center page-font">
+                                 <p class="padding-p">Yetişkin</p>
+
+                                 <select name="adultCount" id="adultCount" class="custom-select">
+                                     <option >-</option>
+                                     <option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option>
+                                     <option value="4">4</option>
+                                     <option value="5">5</option>
+
+                                 </select>
+
+                             </div>
+                         </div>
+                         <div class="col stack-column-center">
+                             <div class="select-child page-font">
+                                 <p class="padding-p">Çocuk</p>
+                                     <select name="childCount" id="childCount" class="custom-select">
+
+                                     <option selected>-</option>
+                                     <option value="0">0</option>
+                                     <option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option>
+                                 </select>
+
+                             </div>
+                         </div>
+
+                     </div>
+
+                 </div>
+                <input type="submit" value="Kaydet ve Devat Et" class="btn btn-primary btn-save">
+            </form>
+             </div>
+
+         </div>
+
+
+        </div>
+        </div>
+
+
+
+
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+
+   $("#FirstForm").submit(function (event) {
+        const formEl = document.forms.FirstForm;
+        const formData = new FormData(formEl);
+        const checkInDate = formData.get("checkInDate");
+        const checkOutDate = formData.get("checkOutDate");
+        const totalDate=checkOutDate-checkInDate;
+        if (checkOutDate < checkInDate) {
+            alert("Geçerli Bir Tarih Giriniz");
+            return;
+        }
+
+        localStorage.setItem("selectedOtel", formData.get("selectedOtel"));
+        localStorage.setItem("checkInDate", formData.get("checkInDate"));
+        localStorage.setItem("checkOutDate", formData.get("checkOutDate"));
+        localStorage.setItem("adultCount", formData.get("adultCount"));
+        localStorage.setItem("childCount", formData.get("childCount"));
+        event.preventDefault();
+    });
+   $(".btn-save").on('click',function () {
+       if (localStorage.getItem("selectedOtel") === true|| localStorage.getItem("checkInDate") === null||localStorage.getItem("checkOutDate") === null||localStorage.getItem("adultCount") === null||localStorage.getItem("childCount") === null) {
+           alert('Lütfen Tüm Alanları Doldurunuz!');
+       }
+
+       else{
+           window.location.href = "index2.html";
+       }
+$(".btn-rez").on("click",function () {
+    window.location.href = "index.html";
+    window.onload();
+})
+
+
+   })
+
+
+
+
+</script>
+</html>

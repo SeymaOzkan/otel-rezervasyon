@@ -1,0 +1,312 @@
+/*// Extra small devices (portrait phones, less than 576px)*/
+/*// No media query since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+/*@media (min-width: 576px) { ... }*/
+
+/*// Medium devices (tablets, 768px and up)*/
+/*@media (min-width: 768px) { ... }*/
+
+/*// Large devices (desktops, 992px and up)*/
+/*@media (min-width: 992px) { ... }*/
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+/*@media (min-width: 1200px) { ... }*/
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    font-family: LemonMilk;
+}
+.grid{
+    width: 80% !important;
+}
+.well{
+    height: 100%;
+}
+@media (max-width: 576px){
+    .jp-card-container{
+        display: none !important;
+    }
+}
+@media (min-width: 768px){
+}
+@media (min-width: 992px){
+
+}
+
+
+
+@media (min-width: 1200px){
+
+
+}
+
+
+
+@media screen and (max-width: 639px) {
+.container-div {
+    width: 100% !important;
+    margin: auto !important
+}
+
+.stack-column,
+.stack-column-center {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    direction: ltr !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+
+}
+.row{
+
+}
+.stack-column-center,
+.stack-column-center,
+.stack-column-center {
+    text-align: center !important
+}
+
+}
+.icon-font-active{
+  font-size: 18px;
+    line-height: 1.5;
+
+}
+.icon-font{
+    font-size: 18px;
+    line-height: 1.5;
+    opacity: 0.6;
+}
+.icon-active{
+    opacity: 0.6;
+}
+
+
+.icon-font-2{
+    color:#000000;
+}
+
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.container{
+    padding: 20px;
+
+}
+.container-fluid-1{
+
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-fluid{
+    padding: 0px 0px 20px 0px;
+
+}
+.row{
+    text-align: center;
+}
+
+.btn-bar{
+    text-align: right;
+    padding: 10px 10px 0px 0px !important;
+}
+.nav-row{
+    background-color: #000000d9;
+    padding: 20px 0px 0px 20px !important;
+}
+.row-center{
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+}
+#checkInDate,#checkOutDate{
+    display: inline-block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.padding-p{
+    margin: 0px;
+    padding:5px;
+}
+
+
+.row-select-2{
+    padding: 40px 0px 0px 0px;
+    background-color: #0000000a;
+    border-radius: 15px;
+
+}
+
+.input-group{
+    padding: 0px 0px 30px 0px;
+}
+
+.btn-save{
+    margin: 20px 0px 0px 0px;
+    color: #000000!important;
+    border: 1px solid #000000d9 !important;
+    background: #ffffff !important;
+    font-size: 18px !important;
+}
+
+.btn-back,.btn-save-1,.btn-success,.btn-info{
+    margin: 20px 0px 0px 0px;
+    color: #ffffff!important;
+    border: 1px solid #000000d9 !important;
+    background: #000000 !important;
+    font-size: 18px !important;
+}
+
+.row-center-padding{
+    padding: 20px 50px 0px 80px;
+
+}
+
+@font-face {
+
+    font-family: 'LemonMilk';
+
+    src: url('../fonts/BalooBhaina2-Regular.ttf');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+p {
+    font-family: LemonMilk;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 2px;
+    color:#ffffff;
+
+}
+
+.page-font {
+    font-family: LemonMilk;
+    font-size: 16px !important;
+    line-height: 27px;
+    color: white;
+
+
+}
+.form-3-font{
+    font-family: LemonMilk;
+    font-size: 16px !important;
+    line-height: 27px;
+    color: #000000;
+}
+.btn-rez{
+    color:#ffffff!important;
+    border: 1px solid #ffffff !important;
+    background: none !important;
+    padding: 10px 20px 0px 10px !important;
+    font-size: 18px !important;
+    margin: 20px 10px 20px 0px;
+    line-height: 20px;
+
+}
+.selected{
+    background-color: rgba(226, 73, 108, 0.26);
+    transition: background-color 0.4s ease-in, border-color 0.4s ease-in;
+    color:#ffffff;
+}
+.selected1{
+    background-color: rgba(226, 73, 108, 0.26);
+    transition: background-color 0.4s ease-in, border-color 0.4s ease-in;
+    color:#ffffff;
+}
+.btn-rez:hover{
+
+    background:#000000d9 !important;
+    color: #BFFFEA !important;
+}
+#form1{
+    padding: 40px 0px 40px 0px;
+}
+.form1-bg{
+    background-color: #000000d9;
+    padding: 0px 20px 20px 20px;
+}
+.select-image:hover{
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 16px;
+}
+.select-image-padding{
+    padding: 15px 5px 5px 0px;
+}
+
+.select-option-font{
+    color: #000000;
+    font-size: 23px;
+    font-family: LemonMilk;
+    font-weight: bold;
+}
+.select-option-alt{
+    color: #000000;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.select2-option-bg{
+    background: #0000000a;
+    padding: 12px;
+}
+.form-3{
+    padding: 30px;
+}
+.form-3-bg{
+    background: #0000000a;
+    border-radius: 20px
+}
+.form-3-padding{
+    margin: 40px;
+    padding: 0px 0px 0px 10px;
+}
+
+.room-bg{
+    background: azure;
+    padding: 20px;
+}
+.icon-font-3 {
+    color: #000000 !important;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.form3-box{
+    background: #ffffff;
+
+    padding: 20px 0px 20px 0px;
+    border-radius: 30px;
+}
+.btn-kod{
+background-color: #0000000a;
+}
+.btn-1-mobile{
+    padding: 0px 0px 0px 60px;
+}

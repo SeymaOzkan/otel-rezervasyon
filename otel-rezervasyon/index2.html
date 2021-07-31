@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/jquery/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>Title</title>
+</head>
+<body>
+<div class="container-fluid">
+
+    <div class="row nav-row stack-column-center">
+        <div class="col-6 stack-column-center" style="text-align: left;padding: 10px 0px 10px 20px;"><p>
+            <span style="font-size: 18px;line-height: 1.5">Otel</span><br> Rezervasyon Sistemi
+        </p></div>
+        <div class="col-6 btn-bar stack-column-center">
+            <button type="button" class="btn btn-rez btn-primary"><p>Yeni Rezervasyon Yap</p></button>
+        </div>
+    </div>
+
+</div>
+<div class="container-fluid-2">
+    <div class="row row-center row-center-padding justify-content-center ">
+        <div class="col-md-8  ">
+            <div class="row d-flex justify-content-center row-select-2">
+                <div class="col-md-4 col-md-2-bg ">
+                    <div class="icon-active">
+                        <img src="images/calendar.png" width="90"
+                             style="width: 100%;max-width: 90px;padding: 0px;margin: 20px 20px 20px 0px">
+                    </div>
+                    <p class="icon-font icon-font-3">Otel ve Tarih<br>
+                        Seçimi</p>
+                </div>
+
+                <div class="col-md-4 col-md-2-bg">
+                    <div class="">
+                        <img src="images/bed.png" width="90"
+                             style="width: 100%;max-width: 90px;padding: 0px;margin: 20px 20px 20px 0px">
+                    </div>
+
+                    <p class="icon-font-active icon-font-3 icon-font-3">Oda Tipi ve Manzara <br>
+                        Seçimi
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-md-2-bg">
+                    <div class="icon-active">
+                        <img src="images/valid.png" width="90"
+                             style="width: 100%;max-width: 90px;padding: 0px;margin: 20px 20px 20px 0px">
+                    </div>
+                    <p class="icon-font icon-font-3">Önizleme ve Ödeme <br>
+                        İşlemleri
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<div class="container">
+
+      <div class="row">
+          <div class="col-md-3">
+              <p id="h1-selectedOtel" class="select-option-font"></p>
+          </div>
+      </div>
+        <div class="row">
+            <div class="col-md-3 select-option-font select2-option-bg">
+               Giriş Tarihi: <p id="h1-checkInDate" class="select-option-alt"></p>
+            </div>
+            <div class="col-md-3 select-option-font select2-option-bg">
+                Çıkış Tarihi: <p id="h1-checkOutDate" class="select-option-alt"></p>
+            </div>
+            <div class="col-md-3 select-option-font select2-option-bg">
+                Yetişkin Sayısı: <p id="h1-adultCount" class="select-option-alt"></p>
+            </div>
+            <div class="col-md-3 select-option-font select2-option-bg">
+          Çocuk Sayısı: <p id="h1-childCount" class="select-option-alt"></p>
+            </div>
+
+
+    </div>
+
+
+</div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-xs-4">
+                <p class="icon-font-2 select-option-font">Oda Tip Seçiniz
+                </p>
+
+            </div>
+        </div>
+        <form>
+
+        <div class="row justify-content-center room-bg">
+            <div class="col-lg-3 col-md-4 col-xl-4 select-image optionsecoptions1">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 select-option-alt">Standart
+                    </div></div>
+                <div class="row">
+                    <div class="col-lg"><img
+                        src="images/1-standart.jpg"
+                        width="330"
+                        style="width: 100%;max-width: 330px;padding: 0px;">
+                    </div></div>
+                <div class="row select-image-padding">
+                    <div class="col-lg-6 col-md-6 col-xl-3 select-option-alt text-left">5 Gün</div>
+
+                    <div class="col-lg-6 col-md-6 col-xl-9 select-option-alt text-right">Fiyat</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-xl-9 select-option-alt text-left"><p id="h1-adultCount1" class="select-option-alt"></p></div></div>
+
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xl-4 select-image optionsecoptions1">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 select-option-alt ">Deluxe
+                    </div></div>
+                <div class="row">
+                    <div class="col-lg"><img
+                            src="images/1-deluxe.jpg"
+                            width="330"
+                            style="width: 100%;max-width: 330px;padding: 0px;">
+                    </div></div>
+                <div class="row select-image-padding">
+                    <div class="col-lg-6 col-md-6 col-xl-3 select-option-alt text-left">5 Gün</div>
+
+                    <div class="col-lg-6 col-md-6 col-xl-9 select-option-alt text-right">Fiyat</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12  col-xl-9 text-left"><p id="h1-adultCount2" class="select-option-alt"></p></div></div>
+
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xl-4 select-image optionsecoptions1">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 select-option-alt ">Suit
+                    </div></div>
+                <div class="row">
+                    <div class="col-lg"><img
+                            src="images/1-suit.jpg"
+                            width="330"
+                            style="width: 100%;max-width: 330px;padding: 0px;">
+                    </div></div>
+                <div class="row select-image-padding">
+                    <div class="col-lg-6 col-md-6 col-xl-3 select-option-alt text-left">5 Gün</div>
+
+                    <div class="col-lg-6 col-md-6 col-xl-9 select-option-alt text-right">Fiyat</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xl-9 select-option-alt text-left"><p id="h1-adultCount3" class="select-option-alt"></p></div></div>
+
+
+            </div>
+        </div>
+
+
+
+    <div class="container ">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-xs-4">
+                <p class="icon-font-2 select-option-font">Manzara Seçimi
+                </p>
+
+            </div>
+        </div>
+        <div class="row justify-content-center room-bg">
+            <div class="col-lg-3 col-md-4 col-xl-4 select-image optionsecoptions" id="room1">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 select-option-alt" >Kara Manzaralı
+                    </div></div>
+                <div class="row">
+                    <div class="col-lg"><img
+                            src="images/land-view.jpg"
+                            width="330"
+                            style="width: 100%;max-width: 330px;padding: 0px;">
+                    </div></div>
+                <div class="row select-image-padding">
+                    <div class="col-lg-6 col-md-6 col-xl-3 select-option-alt text-left">5 Gün</div>
+
+                    <div class="col-lg-6 col-md-6 col-xl-9 select-option-alt text-right">Fiyat</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xl-9 select-option-alt text-left"><p id="h1-adultCount4" class="select-option-alt"></p></div></div>
+
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xl-4 select-image optionsecoptions" id="room2">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 select-option-alt" >Havuz Manzaralı
+                    </div></div>
+                <div class="row">
+                    <div class="col-lg"><img
+                            src="images/pool-view.jpg"
+                            width="330"
+                            style="width: 100%;max-width: 330px;padding: 0px;">
+                    </div></div>
+                <div class="row select-image-padding">
+                    <div class="col-lg-6 col-md-6 col-xl-3 select-option-alt text-left">5 Gün</div>
+
+                    <div class="col-lg-6 col-md-6 col-xl-9 select-option-alt text-right">Fiyat</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xl-9 select-option-alt text-left"><p id="h1-adultCount5" class="select-option-alt"></p></div></div>
+
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xl-4 select-image optionsecoptions" id="room3">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 select-option-alt" >Deniz Manzaralı
+                    </div></div>
+                <div class="row">
+                    <div class="col-lg"><img
+                            src="images/sea-view.jpg"
+                            width="330"
+                            style="width: 100%;max-width: 330px;padding: 0px;">
+                    </div></div>
+                <div class="row select-image-padding">
+                    <div class="col-lg-6 col-md-6 col-xl-3 select-option-alt text-left">5 Gün</div>
+
+                    <div class="col-lg-6 col-md-6 col-xl-9 select-option-alt text-right">Fiyat</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xl-9 select-option-alt text-left"><p id="h1-adultCount6" class="select-option-alt"></p></div></div>
+
+
+            </div>
+        </div>
+    </div>
+        </form>
+        <div class="row  justify-content-center">
+            <div class="col">
+                <div  class="row justify-content-center">
+                    <div class="col-lg-4 col-md-4"><button type="button" class="btn btn-primary  btn-back"><a href="index.html" style="color: #ffffff"> Geri</a></button></div>
+                    <div class="col-lg-4 col-md-4"></div>
+                    <input type="submit" value="Kaydet ve Devat Et" class="btn btn-primary btn-save-1">
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+
+<script>
+    var selectedDiv = "";
+    var x = document.getElementsByClassName('optionsecoptions')
+    for (var i = 0; i < x.length; i++) {
+
+        x[i].addEventListener("click", function(){
+
+            var selectedEl = document.querySelector(".selected");
+            if(selectedEl){
+                selectedEl.classList.remove("selected");
+            }
+            this.classList.add("selected");
+            console.log(x)
+        }, false);
+    }
+
+
+
+
+    var selectedDiv1 = "";
+    var y = document.getElementsByClassName('optionsecoptions1')
+    for (var i = 0; i < y.length; i++) {
+        y[i].addEventListener("click", function(){
+
+            var selectedEl = document.querySelector(".selected1");
+            if(selectedEl){
+                selectedEl.classList.remove("selected1");
+            }
+            this.classList.add("selected1");
+
+        }, false);
+    }
+
+    var a="Yetişkin"
+    document.getElementById("h1-selectedOtel").innerHTML = localStorage.getItem("selectedOtel");
+    document.getElementById("h1-checkInDate").innerHTML = localStorage.getItem("checkInDate");
+    document.getElementById("h1-checkOutDate").innerHTML = localStorage.getItem("checkOutDate");
+
+
+    document.getElementById("h1-adultCount").innerHTML = localStorage.getItem("adultCount");
+    document.getElementById("h1-childCount").innerHTML = localStorage.getItem("childCount");
+    document.getElementById("h1-adultCount1").innerHTML = localStorage.getItem("adultCount") +" Yetişkin";
+    document.getElementById("h1-adultCount2").innerHTML = localStorage.getItem("adultCount") +" Yetişkin";
+    document.getElementById("h1-adultCount3").innerHTML = localStorage.getItem("adultCount") +" Yetişkin";
+    document.getElementById("h1-adultCount4").innerHTML = localStorage.getItem("adultCount") +" Yetişkin";
+    document.getElementById("h1-adultCount5").innerHTML = localStorage.getItem("adultCount") +" Yetişkin";
+    document.getElementById("h1-adultCount6").innerHTML = localStorage.getItem("adultCount") +" Yetişkin";
+
+
+    localStorage.setItem("selectedOtel", formData.get("selectedOtel"));
+    localStorage.setItem("checkInDate", formData.get("checkInDate"));
+    localStorage.setItem("checkOutDate", formData.get("checkOutDate"));
+    localStorage.setItem("adultCount", formData.get("adultCount"));
+    localStorage.setItem("childCount", formData.get("childCount"));
+    event.preventDefault();
+
+
+$(document).ready(function () {
+    $(".btn-save-1").on('click',function () {
+
+    })
+
+    $(".btn-rez").on("click",function () {
+        window.location.href = "index.html";
+        window.onload();
+    })
+
+
+})
+
+
+    $("#FirstForm").submit(function (event) {
+        const formEl = document.forms.FirstForm;
+        const formData = new FormData(formEl);
+        const checkInDate = formData.get("checkInDate");
+        const checkOutDate = formData.get("checkOutDate");
+
+        if (checkOutDate < checkInDate) {
+            alert("Geçerli Bir Tarih Giriniz");
+            return;
+        }
+
+        localStorage.setItem("selectedOtel", formData.get("selectedOtel"));
+        localStorage.setItem("checkInDate", formData.get("checkInDate"));
+        localStorage.setItem("checkOutDate", formData.get("checkOutDate"));
+        localStorage.setItem("adultCount", formData.get("adultCount"));
+        localStorage.setItem("childCount", formData.get("childCount"));
+        event.preventDefault();
+    });
+
+
+
+</script>
+</html>
